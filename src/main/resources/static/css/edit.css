@@ -1,0 +1,104 @@
+@import 'reset.css';
+body{
+    position: relative;
+}
+section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    padding: 5vh;
+    border: 5px solid #ccc;
+    border-radius: 15px;
+}
+form,ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+ul{
+    display: inline-block;
+}
+
+li{
+    position: relative;
+    /* display: inline-block; */
+    width: auto;
+    height: calc(100% / 3);
+    margin: 0 13%;
+
+}
+p{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 38px;
+}
+.user__info input{
+    height: 23px;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    background: #333;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 23px;
+    width: 250px;
+    display: block;
+    margin-top: 3%;
+}
+.user__info input:focus{
+    outline: 0;
+    border-color: #333;
+    border-bottom: 3px solid #ccc;
+}
+.user__info p{
+    display: inline-block;
+}
+.errorMsg p{
+    font-size: 15px;
+    color: rgb(179,54,67);
+    line-height: 10px;
+}
+body > .errorMsg p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.return, .confirm{
+    width: 81px;
+    height: 88.1px;
+    position: absolute;
+    top: 105%;
+}
+.confirm{
+    left: 320px;
+}
+.return img, .confirm img{
+    display: block;
+    margin: 0 auto;
+}
+
+.return a{
+    display:block;
+    height: 91.6px;
+}
+
+.return P{
+    text-align: center;
+}
+.confirm p{
+    display: block;
+    padding-top: .5px;
+}
+
+input:-internal-autofill-selected {
+	-webkit-box-shadow: 0 0 0px 1000px #333 inset;
+	-webkit-text-fill-color: #ccc  !important;
+	-webkit-text-size-adjust: 23px;
+}

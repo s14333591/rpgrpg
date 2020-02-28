@@ -1,0 +1,36 @@
+@import 'reset.css';
+
+body{
+    position: relative;
+}
+section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    padding: 3vh;
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+    height: calc(100% /3);
+    display: none;
+}
+
+.second{
+    font-size: 60px;
+    text-align: center;
+}
+
+.third{
+    font-size: 80px;
+    text-align: right;
+    position: relative;
+    left: 10px;
+}
+

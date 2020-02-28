@@ -1,0 +1,117 @@
+@import 'reset.css';
+body{
+    position: relative;
+}
+section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    font-size: 18px;
+    font-weight: bold;
+}
+section > ul{
+    display: flex;
+    height: 100%;
+}
+section > ul > li:first-child{
+    width: 65%;
+}
+section > ul > li:nth-child(2){
+    width: 30%;
+    margin-left: auto;
+}
+.hpmpWindow,
+.menuWindow,
+.statusWindow{
+    padding: 3vh;
+    border: 5px solid #ccc;
+    border-radius: 15px;
+}
+.hpmpWindow {
+    margin: 0 auto;
+    width: 30%;
+    height: 3%;
+}
+.hpmpWindow ul{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.hpmpWindow ul li{
+  display: flex;
+  align-items: center;
+  max-width: 64.84px;
+  margin: 0 auto;
+}
+.iconWindow{
+    height: 72.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconWindow img:first-child{
+    position: relative;
+    left: 20px;
+}
+.iconWindow img:last-child{
+    position: relative;
+    right: 20px;
+}
+.menuWindow {
+    position: relative;
+}
+.menuWindow ul{
+    display: flex;
+}
+.menuWindow ul li{
+    margin: 0 auto;
+}
+.statusWindow{
+    padding: 3vh 4vh;
+    display: flex;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.statusWindow ul{
+    height: 100%;
+    width: 50%;
+}
+.statusWindow ul:last-child p{
+    margin-left: auto;
+    text-align: right;
+    left: 30%;
+}
+.statusWindow li{
+    height: calc(100% / 11);
+    position: relative;
+}
+.statusWindow p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.message{
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translateY(80%);
+    transform: translateX(-50%);
+}
+.saveMsg{
+	display: none;
+}
+.errMsg{
+	color: rgb(179,54,67);
+}

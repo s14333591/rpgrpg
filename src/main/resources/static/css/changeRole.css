@@ -1,0 +1,111 @@
+@import 'reset.css';
+body{
+    position: relative;
+    white-space: nowrap;
+}
+.title{
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 23vh;
+}
+p{
+    font-weight: bold;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    width: 480px;
+    height: 200px;
+    padding: 3vh;
+    border: 5px solid #ccc;
+    border-radius: 15px;
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+li{
+    height: 100%;
+    width: calc(100% / 3);
+    position: relative;
+    white-space: nowrap;
+}
+
+.roleName{
+    text-align: center;
+    font-size: 20px;
+}
+
+li img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+label{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+li p {
+    display: inline;
+}
+
+li > p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+li > label:hover{
+    cursor: pointer;
+}
+.disabled label:hover{
+    cursor: not-allowed;
+}
+
+.disabled{
+    color: #a3a3a3;
+}
+
+.return, .confirm{
+    width: 81px;
+    height: 88.1px;
+    position: absolute;
+    top: 280px;
+}
+
+.return, .confirm p {
+    font-size: 23px;
+    font-weight: bold;
+}
+.confirm{
+    left: 430px;
+}
+.return img, .confirm img{
+    display: block;
+    margin: 0 auto;
+}
+
+.return a{
+    display:block;
+}
+
+.return P{
+    text-align: center;
+    padding-top: 5px;
+}
+.confirm p{
+    display: block;
+}

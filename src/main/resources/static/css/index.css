@@ -1,0 +1,72 @@
+@import 'reset.css';
+
+body{
+    position: relative;
+}
+section{
+    /* 上下左右中央寄せにするためのCSS
+    参照:https://www.granfairs.com/blog/staff/centering-by-css */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    /* 要素の大きさを指定
+    値は、pxや%が一般的
+    今回は、ブラウザが変わっても固定で表示したいのでpx*/
+    width: 320px;
+    height: 180px;
+
+    /* paddingはボーダーまでの余白のこと
+    pxや%の他に、値はvhやvwでも指定できる(あまり使われないらしい) */
+    padding: 3vh;
+
+    /* borderは枠線のこと
+    枠線の太さ、種類、色の順番で指定
+    solid以外の種類が使われることは稀 */
+    border: 5px solid #ccc;
+
+    /* borderの角の丸みを指定、0だと四角形、50%にすると円になる */
+    border-radius: 15px;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    /* heightを50%にすることで、上下を半分に分割する */
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+/* ulタグの中にあるpタグを指定 */
+ul p{
+    /* フォントサイズ指定
+    pxやemがよく見る単位 */
+    font-size: 28px;
+
+    /* フォントの太さ指定 */
+    font-weight: bold;
+
+    /* 文字間を調整 */
+    letter-spacing: 2px;
+
+    /* ブロック要素を左右中央寄せにする際の記述 */
+    text-align: center;
+
+    /* インライン要素を上下左右中央寄せ */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 25px;
+}
+
