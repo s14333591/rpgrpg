@@ -51,6 +51,7 @@ public class LoginController {
 		//レコード数1の時、ログインOK
 		if(userRes.size() == 1) {
 			user = userRes.get(0);
+			user.setPassword(form.getPassword());
 			session.setAttribute("user", user);
 
 			//ロールを全件取得して保存
